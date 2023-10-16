@@ -9,11 +9,9 @@
   Add your open source license, GitHub uses the MIT license.
 -->
 
-# ATM Management System using C++
+# Payroll-Management-System using C++
 
-ATMs are Automated Teller Machines that are used to carry day-to-day financial transactions. ATMs can be used to withdraw money or to deposit money or even to know the information of an account like the balance amount, etc. They are convenient and easy to use,and  it allows consumers to perform quick self-service transactions.
-
-In this article, we will discuss the ATM Management System in C++ which is an application that provides users with every aspect that an actual Automated Teller Machine i.e., ATM should have. It is a menu-driven program having ATM functions which include:
+The project has multiple classes and sub-classes with some features within them. Basic operations users can perform via this program project which has such functions: adding new employee record, modifying employee record and deleting record, displaying one or all employee’s record. Besides these, payroll management also allows users to print the salary slip for a particular employee.
 
 </header>
 
@@ -26,31 +24,47 @@ In this article, we will discuss the ATM Management System in C++ which is an ap
   TBD-step-1-notes.
 -->
 
-<!--
-_Welcome to "TBD-course-name"! :wave:_
+## The Project classes:
+<p>1. LINES<br />
+- LINE_HOR<br />
+- LINE_VER<br />
+- BOX<br />
+- CLEARUP<br />
+- CLEARDOWN<br />
+<p>2. MENUS<br />
+- MAIN_MENU<br />
+- EDIT_MENU<br />
+- INTRODUCTION<br />
+<p>3. EMPLOYEE<br />
+- NEW_EMPLOYEE<br />
+- MODIFICATION<br />
+- DELETION<br />
+- DISPLAY<br />
+- LIST<br />
+- SALARY_SLIP<br />
+- ADD_RECORD<br />
+- MODIFY_RECORD<br />
+- DELETE_RECORD<br />
+- LASTCODE<br />
+- CODEFOUND<br />
+- RECORD<br />
+- FOUND_CODE<br />
+- DISPLAY_RECORD<br />
+- VALID_DATE<br />
 
-TBD-step-1-information
-
-**What is _TBD-term-1_**: TBD-definition-1
-
-### :keyboard: Activity: TBD-step-1-name
--->
-1. Enter Name, Account number, Account type to be shown during transactions.
-2. Shows the information about the person who is doing the transaction.
-3. Enter amount to deposited in the account.
-4. Shows the Balance in the account.
-5. Enter amount to be withdrawn from the account, and then it shows available balance.
-6. Cancel the transaction.
-
-## Approach:
-This program uses basic concepts of class, Access Modifiers in C++, data types, variables, Switch Case, etc. Below are the functionalities that are to be implemented:
-1. <b>setvalue()</b>: This function is used here to set the data using basic input and output method in C++ i.e., cout and cin statements which display and take input from the keyboard i.e., from the user respectively.
-2. <b>showvalue()</b>: This function is used to print the data.
-3. <b>deposit()</b>: This function helps to deposit money in a particular account.
-4. <b>showbal()</b>: This function shows the total balance available after deposition.
-5. <b>withdrawl()</b>: This function helps to withdraw money from the account.
-
-<b>Automated Teller Machine (ATM)</b> also known as ABM (Automated Banking Machine) is a banking system. This banking system allows customers or users to have access to financial transactions. These transactions can be done in public space without any need for a clerk, cashier, or bank teller. 
+## Project Operations:
+<p>Addition of New Employee:<br />
+This feature is under the public functions of class employee. The information handled in this feature are employee code number, name, address, phone number, joining date (day, month and year), designation, grade and loan.<br />
+<p>Modify Employee Record:<br />
+This System in C++ asks for employee code from the user for this function to work. Modifications that can be made are the employee code number itself, joining date (day, month and year), name, address, phone number, designation, grade, house allowance and loan given to the employee. Employee’s grades are categorized as A, B, C, D and E.
+<p>Delete Employee Record:<br />
+Deletion is done of an employee record from Payroll management system project by entering the employee code. A confirmation message is asked stating whether the user really wants to delete the record from the file.<br />
+<p>Print Employee Salary Slip:<br />
+This feature too asks for the employee code; the employee code has been used to unlock or perform operations in many features of this payroll management system project in C++. This function lists all the months of the year, and asks for date, employee name, designation and grade from the user. To print the salary slip, the user further needs to provide information such as number of days worked in the month by the employee and the number of hours worked over time. The slip enlists basic salary, allowance, deductions and net salary of the employee.<br />
+<p>Display Employee Record:<br />
+Providing the employee code number, users can access all the provided information related to a particular employee via this function. The employee record information displayed are the ones provided while adding a new employee record.<br />
+<p>Display List of Employees:<br />
+This feature displays the record of all employees added in file. The records are displayed in a tabular pattern containing information such as code name of the employee, phone number, date of joining, designation, grade and salary.
 
 <footer>
 
